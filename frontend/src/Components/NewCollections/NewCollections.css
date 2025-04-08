@@ -1,0 +1,68 @@
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+  }
+  
+  .new-collections h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  
+  .new-collections hr {
+    width: 120px;
+    height: 3px;
+    background-color: #333;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  /* Grid container for brands */
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  /* Individual brand card */
+  .brand-box {
+    text-align: center;
+    border-radius: 16px;
+    background: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
+  
+  .brand-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .brand-box img {
+    width: 100%;
+    height: 300px;           /* Adjust height as needed */
+    object-fit: contain;     /* Show the full image without cropping */
+    background-color: #f0f0f0;  /* Fills gaps when using 'contain' */
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .brand-box:hover img {
+    transform: scale(1.02);
+  }
+  
+  .brand-box p {
+    margin: 16px 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #222;
+  }
+  

@@ -1,0 +1,269 @@
+/* Base Font and Body */
+body {
+  font-family: 'Inter', 'system-ui', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* Main Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 60px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo Styling */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-logo img {
+  width: 55px;
+}
+
+.nav-logo p {
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+/* Nav Menu Styling */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.nav-menu li {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.nav-menu li:hover {
+  color: #111827;
+}
+
+/* Underline Effect for Active Menu Item */
+.nav-underline {
+  border: none;
+  height: 4px;
+  background-color: #111827;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 6px;
+}
+
+/* Search Bar Styling */
+/* Search Bar Styling */
+.nav-search {
+  margin-left: 30px;
+  margin-right: 30px; /* Spacing between search and login */
+  display: flex;
+  align-items: center;
+}
+
+.nav-search-wrapper {
+  position: relative;
+  width: 180px; /* Reduced from 260px to make the search bar shorter */
+}
+
+.nav-search-wrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  font-size: 15px;
+  background-color: #f3f4f6;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+/* Rest of your existing CSS remains the same */
+.nav-search-wrapper input:focus {
+  outline: none;
+  border-color: #111827;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.08);
+}
+
+.nav-search-wrapper input::placeholder {
+  color: #9ca3af;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+/* Login & Cart Section */
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Styled Login Button */
+.nav-login-cart button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 9999px;
+  background-color: #111827;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+  background-color: #374151;
+}
+
+/* Cart Icon */
+.nav-login-cart img {
+  width: 26px;
+}
+
+.nav-cart-count {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -14px;
+  right: 10px;
+  font-weight: 600;
+}
+
+/* Dropdown Icon */
+.nav-dropdown {
+  display: none;
+}
+
+/* Arrow Controls with Gap */
+.nav-arrows {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.nav-arrow-btn {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-arrow-btn:hover {
+  background-color: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+/* Responsive Styling */
+@media(max-width: 900px) {
+  .nav {
+    padding: 16px 30px;
+  }
+
+  .nav-menu {
+    gap: 24px;
+  }
+}
+
+@media(max-width: 750px) {
+  .nav {
+    padding: 16px 20px;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    padding: 20px 0;
+    z-index: 99;
+  }
+  
+  .nav-menu-visible {
+    display: flex;
+  }
+
+  .nav-dropdown {
+    display: block;
+    width: 26px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-dropdown.open {
+    transform: rotate(90deg);
+  }
+
+  .nav-login-cart {
+    gap: 18px;
+  }
+
+  .nav-search-wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 500px) {
+  .nav-logo img {
+    width: 28px;
+  }
+
+  .nav-logo p {
+    font-size: 18px;
+  }
+
+  .nav-login-cart {
+    transform: scale(0.9);
+    gap: 10px;
+  }
+
+  .nav-menu li {
+    font-size: 15px;
+  }
+}

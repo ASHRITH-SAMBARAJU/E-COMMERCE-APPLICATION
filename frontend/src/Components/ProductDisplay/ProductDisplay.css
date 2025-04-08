@@ -1,0 +1,211 @@
+
+.productdisplay-modern {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.productdisplay-modern-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productdisplay-modern-main-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.productdisplay-modern-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.productdisplay-modern-thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.productdisplay-modern-thumbnails img:hover {
+  transform: scale(1.05);
+  border-color: #aaa;
+}
+
+.productdisplay-modern-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productdisplay-modern-stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.productdisplay-modern-stars img {
+  width: 20px;
+  height: 20px;
+}
+
+.productdisplay-modern-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111;
+}
+
+.productdisplay-modern-description {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.productdisplay-modern-size h3 {
+  margin-bottom: 8px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+}
+
+.size-btn {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.size-btn:hover {
+  background-color: #eee;
+}
+
+.size-btn.selected {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.productdisplay-modern-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.qty-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f6f6f6;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.qty-buttons button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #111;
+}
+
+.qty-buttons span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ✅ Unified Button Styling */
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-action {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;  /* 🔽 Reduced height & padding */
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  height: 38px; /* 🔽 Compact height */
+}
+
+.btn-action:hover {
+  background-color: #222;
+}
+
+.btn-action:hover {
+  background-color: #222;
+}
+
+/* ✅ Toast Message Styling */
+.toast-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  width: fit-content;
+  animation: fadeIn 0.3s ease;
+  border: 1px solid #eee;
+  margin-top: 15px;
+}
+
+.toast-icon {
+  background-color: #000;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.productdisplay-modern-stock {
+  font-size: 13px;
+  color: #777;
+}
+
+.productdisplay-right-category span {
+  font-weight: 600;
+}

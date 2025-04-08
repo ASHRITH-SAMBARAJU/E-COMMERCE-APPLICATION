@@ -1,0 +1,221 @@
+
+   .cartitems {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    gap: 30px;
+  }
+  
+  .cartitems-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .cart-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  
+  .cartitems-product-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .cartitems-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cartitem-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  
+  .cartitem-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .cartitem-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .cartitem-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .cartitem-category {
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .cartitem-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .qty-btn {
+    background: #f6f6f6;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fav-btn {
+    padding: 8px 16px;
+    background-color: #e6e6e6;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .cartitems-right {
+    flex: 1;
+    max-width: 350px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 24px;
+  }
+  
+  .cartitems-right h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  .cartitems-total-item h3 {
+    font-size: 16px;
+  }
+  
+  .cartitems-right button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .cartitems-right button:hover {
+    background: #222;
+  }
+  
+  .cartitems-promobox {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .cartitems-promobox input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .cartitems-promobox button {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .cartitems-top-btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .cartitems-top-btns button {
+    background-color: black;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cartitems-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cartitem-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .black-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  

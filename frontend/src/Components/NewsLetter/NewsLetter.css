@@ -1,0 +1,142 @@
+.newsletter {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #f9f9ff 0%, #ecf3ff 100%);
+  border-radius: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 100px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter h1 {
+  color: #1a1a1a;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.newsletter p {
+  color: #555;
+  font-size: 18px;
+  max-width: 640px;
+  text-align: center;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.newsletter div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.newsletter div:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 18px 24px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background: transparent;
+}
+
+.newsletter div button {
+  padding: 16px 28px;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter div button:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* ----------- media queries ----------- */
+
+@media (max-width: 1280px) {
+  .newsletter h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 900px) {
+  .newsletter {
+    padding: 40px 6%;
+    gap: 20px;
+  }
+
+  .newsletter h1 {
+    font-size: 32px;
+  }
+
+  .newsletter p {
+    font-size: 16px;
+  }
+
+  .newsletter div {
+    height: 52px;
+  }
+
+  .newsletter input {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .newsletter div button {
+    padding: 14px 22px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .newsletter {
+    padding: 28px 4%;
+  }
+
+  .newsletter div {
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .newsletter input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .newsletter div button {
+    width: 100%;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 12px;
+  }
+}

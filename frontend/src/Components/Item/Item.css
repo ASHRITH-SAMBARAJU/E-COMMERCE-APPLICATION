@@ -1,0 +1,100 @@
+.item-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  text-align: left;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Added for better edge handling */
+}
+
+.item-card:hover {
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.item-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease; /* Added smooth zoom */
+}
+
+.item-card:hover .item-image {
+  transform: scale(1.02); /* Subtle hover effect */
+}
+
+.item-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 4px; /* Reduced bottom margin */
+  color: #222;
+  line-height: 1.4; /* Better readability */
+  min-height: 44px; /* Ensures consistent title space */
+  display: flex;
+  align-items: center; /* Vertically centers text */
+}
+
+.item-price-section {
+  display: flex;
+  align-items: baseline; /* Better price alignment */
+  gap: 8px; /* Reduced gap */
+  margin-bottom: 12px;
+}
+
+.item-price-new {
+  font-weight: 700; /* Slightly bolder */
+  font-size: 1.1rem; /* Slightly larger */
+  color: #000;
+}
+
+.item-price-old {
+  color: #888;
+  font-size: 0.9rem; /* Smaller for hierarchy */
+  text-decoration: line-through;
+}
+
+.item-cart-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 0.95rem; /* Slightly reduced */
+  letter-spacing: 0.5px; /* Improved readability */
+}
+
+.item-cart-btn:hover {
+  background-color: #222;
+  transform: translateY(-1px); /* Subtle lift effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .item-card {
+    max-width: 100%;
+    padding: 14px;
+  }
+  
+  .item-image {
+    height: 240px;
+    margin-bottom: 10px;
+  }
+  
+  .item-title {
+    font-size: 0.95rem;
+    min-height: 40px;
+  }
+}
