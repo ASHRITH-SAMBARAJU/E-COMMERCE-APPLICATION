@@ -16,14 +16,16 @@ A full-stack e-commerce platform built using the MERN stack, providing users wit
   
 ---
 
-## Technology Stack  
+## Technology Stack
 
-- **Frontend**: React.js, Tailwind CSS   
-- **Backend**: Node.js, Express.js  
-- **Database**: MongoDB with Mongoose  
-- **Authentication**: JWT & bcrypt  
-- **State Management**: React Context / Redux  
-- **Deployment**: Render / Vercel / Netlify  
+| Category            | Tools/Technologies                         |
+|---------------------|--------------------------------------------|
+| Frontend            | React.js, Tailwind CSS                     |
+| Backend             | Node.js, Express.js                        |
+| Database            | MongoDB with Mongoose                      |
+| Authentication      | JWT, bcrypt                                |
+| State Management    | React Context, Redux                       |
+| Deployment          | Render, Vercel, Netlify                    |
 
 ---
 
