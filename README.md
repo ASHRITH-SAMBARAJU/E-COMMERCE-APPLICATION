@@ -29,28 +29,28 @@ A full-stack e-commerce platform built using the MERN stack, providing users wit
 
 ## Output Screenshots
 
-### 🏠 Homepage  
+### Homepage  
 ![Homepage](./frontend/src/Components/Assets/outputs/1-homepage.png)
 
-### 🔐 Login Page  
+### Login Page  
 ![Login Page](./frontend/src/Components/Assets/outputs/2-login-page.png)
 
-### 🛍️ Products Page  
+### Products Page  
 ![Products Page](./frontend/src/Components/Assets/outputs/3-products-page.png)
 
-### 📄 Product Details Page  
+### Product Details Page  
 ![Product Details](./frontend/src/Components/Assets/outputs/4-product-details.png)
 
-### 🛒 Cart Page  
+### Cart Page  
 ![Cart](./frontend/src/Components/Assets/outputs/5-cart.png)
 
-### 🆕 New Collection Page  
+### New Collection Page  
 ![New Collection](./frontend/src/Components/Assets/outputs/6-new-collection.png)
 
-### ℹ️ About Page  
+### About Page  
 ![About](./frontend/src/Components/Assets/outputs/7-about.png)
 
-### 📞 Contact Page  
+### Contact Page  
 ![Contact](./frontend/src/Components/Assets/outputs/8-contact.png)
 
 ---
@@ -82,5 +82,12 @@ npm run dev
 ---
 
 ## Contact 
+
+Contact
+For questions, feedback, or collaboration:
+
+Ashrith Sambaraju
+📧 Email: ashrithsambaraju@gmail.com
+🔗 LinkedIn: linkedin.com/in/ashrith-sambaraju
 
 
